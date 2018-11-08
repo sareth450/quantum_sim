@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "q_bloch.h"
+#include "headers/q_bloch.h"
 
 
 struct q_bit_bloch new_qbit(int _initval, double _lattitude, double _longtitude){

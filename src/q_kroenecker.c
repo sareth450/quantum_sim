@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "q_kroenecker.h"
+#include "headers/q_kroenecker.h"
 
 void kroenecker_product(q_matrix* kr, q_matrix qm1, q_matrix qm2){
 	printf("xd");

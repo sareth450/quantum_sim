@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "q_matrix.h"
+#include "headers/q_matrix.h"
 
 q_matrix new_q_matrix(int rows, int cols){
 

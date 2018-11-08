@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "q_basic.h"
+#include "headers/q_basic.h"
 
 q_state new_q_state(int size, int state, double complex value){
 	q_state qs;
