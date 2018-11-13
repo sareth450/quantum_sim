@@ -1,13 +1,12 @@
 
-all: kro basic bloch
+all: gates bloch
 
-kro:
+gates:
 	gcc -Wall -c src/q_matrix.c
 	gcc -Wall -c src/q_kroenecker.c
-	gcc -Wall -o q_kroenecker q_kroenecker.o q_matrix.o 
-basic:
 	gcc -Wall -c src/q_basic.c
-	gcc -Wall -o q_basic q_basic.o q_matrix.o -lm
+	gcc -Wall -c src/q_gates.c
+	gcc -Wall -o q_gates q_gates.o q_basic.o q_matrix.o q_kroenecker.o -lm
 
 bloch:
 	gcc -Wall -c src/q_bloch.c

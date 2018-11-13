@@ -72,17 +72,3 @@ q_matrix qreg_to_matrix(q_register qr){
 	return qrm;
 }
 
-int main(int args, char* argv[]){
-	
-	q_register qreg = new_q_register_basic(3);
-
-	print_q_register(qreg);
-	
-	q_matrix qrm = qreg_to_matrix(qreg);
-
-	print_matrix(&qrm);
-
-	delete_q_register(&qreg);
-	
-	return 0;
-}

@@ -3,6 +3,8 @@
 
 #include <math.h>
 #include <complex.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 #define STANDARD_SIZE 1024
 #define MEDIUM_SIZE 4096

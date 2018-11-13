@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "headers/q_matrix.h"
 
 q_matrix new_q_matrix(int rows, int cols){
@@ -48,7 +46,7 @@ void print_matrix(q_matrix *qm){
 	for(int i=0; i<qm->rows; i++){
 		printf("[ ");
 		for(int j=0; j<qm->cols; j++){
-			printf("%lf+%lfi, ", creal(get_value_at(qm,i,j)), cimag(get_value_at(qm,i,j)));
+			printf("%.2lf+%.2lfi, ", creal(get_value_at(qm,i,j)), cimag(get_value_at(qm,i,j)));
 		}
 		printf(" ]\n");
 	}
