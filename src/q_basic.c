@@ -33,7 +33,7 @@ q_register new_q_register_basic(int size){
 	
 	qreg.reg_size = (int) pow(2,(double) size); //rozmiar wektorów - 2^n 
 	
-	double complex alpha = 2.0 / (double) qreg.reg_size; //alfa jakieś z góry równe 1/n
+	double complex alpha = 1.0 / sqrt((double) qreg.reg_size); //alfa jakieś z góry równe 1/n
 	
 	qreg.states = calloc(qreg.reg_size, sizeof(q_state));
 	
@@ -74,7 +74,7 @@ q_matrix qreg_to_matrix(q_register qr){
 
 int main(int args, char* argv[]){
 	
-	q_register qreg = new_q_register_basic(5);
+	q_register qreg = new_q_register_basic(3);
 
 	print_q_register(qreg);
 	
